@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Calculate Average Marks
+    </h1>
+    <form action="{{ url_for('calculate') }}" method="post">
+        <div>
+        <label>DSA</label>
+        <input type="text",name="dsa" placeholder="dsa" required>
+        </div>
+        <div>
+        <label>Science</label>
+        <input type="text",name="science" placeholder="science" required>
+        </div>
+        <div>
+        <label>Data Scienece</label>
+        <input type="text",name="datascience" placeholder="datascience" required>
+        </div>
+        <div>
+            <button type="submit">Calculate Marks</button>
+        </div>
+    </form>
+</body>
+</html>
